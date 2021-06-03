@@ -30,41 +30,54 @@ body {
   height: 200px;
 }
 
+.invoice-table,
+th,
+td {
+  border: 1px solid rgba(46, 49, 49, 0.5);
+  border-collapse: collapse;
+  padding: 10px;
+}
+.bg-blue {
+  background: rgba(63, 165, 191, 0.45);
+  font-weight: bold;
+}
+.bg-none {
+  background: white;
+  font-weight: normal;
+}
 
+p {
+  color: blue;
+}
 
+/* comma selects:- para and second both */
+.para,
+#second {
+  color: black;
+}
+#second {
+  color: orange !important;
+}
 
-/* p {
-    color: blue;
-  }
-  
-  /* comma selects:- para and second both  */
-  .para,
-  #second {
-    color: black;
-  }
-  #second {
-    color: orange !important;
-  }
-  
-  .app {
-    font-size: 50px;
-    border: 1px solid black;
-    border-radius: 21px;
-    box-shadow: -20px 10px blue;
-    width: 500px;
-    padding: 40px 10px 30px 20px;
-    margin: 40px 10px 30px 20px; /* Both top right bottom left */
-  }
-  
-  .app1,
-  .app2 {
-    display: inline-block;
-    width: 30%;
-  }
-  
-  button {
-  }
-  
-  button:hover {
-    cursor: not-allowed;
-  } */
+.app {
+  font-size: 50px;
+  border: 1px solid black;
+  border-radius: 21px;
+  box-shadow: -20px 10px blue;
+  width: 500px;
+  padding: 40px 10px 30px 20px;
+  margin: 40px 10px 30px 20px; /* Both top right bottom left */
+}
+
+.app1,
+.app2 {
+  display: inline-block;
+  width: 30%;
+}
+
+button {
+}
+
+button:hover {
+  cursor: not-allowed;
+}

@@ -1,0 +1,168 @@
+.container {
+  font-family: "Open Sans", sans-serif;
+}
+.nav-header {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.stunning-logo {
+  width: 10%;
+}
+
+div ul li {
+  display: inline;
+}
+
+.li-pages {
+  padding: 25px;
+  font-size: 15px;
+  color: rgba(10, 9, 9, 0.3);
+  font-weight: 700;
+}
+
+.page-active {
+  color: rgba(10, 9, 9, 1);
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: rgba(37, 69, 176, 0.81);
+}
+
+.account-button {
+  width: 150px;
+  margin-right: 25px;
+  border-radius: 20px;
+  height: 50px;
+  background-color: rgba(252, 199, 207, 0.8);
+  border: none;
+  color: blue;
+  font-weight: 700;
+}
+
+.main-body {
+  display: flex;
+  margin-top: 70px;
+  padding-top: 40px 20px;
+}
+.left-pane,
+.right-pane {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.jumbotron {
+  font-size: 75px;
+  font-weight: 900 !important;
+  margin-left: 100px;
+}
+
+.description {
+  margin-left: 100px;
+  margin-top: 40px;
+  color: rgba(10, 9, 9, 0.6);
+  font-weight: 700;
+}
+.fullstop {
+  color: blue;
+}
+
+.button-bar {
+  margin-top: 40px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+#new-account {
+  width: 150px;
+  border-radius: 20px;
+  height: 50px;
+  background-color: blue;
+  border: none;
+  color: white;
+  font-weight: 700;
+}
+
+.arrow-down,
+.arrow-up {
+  width: 30px;
+}
+
+.deadline-window {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  margin-left: 100px;
+}
+
+.deadline-item input[type="radio"] {
+  color: green;
+}
+
+.deadline-item {
+  width: 350px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3px;
+  background-color: rgba(10, 9, 9, 0.04);
+  border-radius: 10px;
+  padding: 2px 10px;
+}
+
+.deadline-item-active {
+  margin: 5px 0 5px 0;
+  background: white;
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.3);
+}
+.deadline-item img {
+  width: 30px;
+  height: 30px;
+}
+.deadline-item .name {
+  align-items: center;
+  width: 150px;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.deadline-item .date {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(10, 9, 9, 0.5);
+}
+
+.deadline-item .dash {
+  font-weight: 900;
+}
+
+.deadline-item .dot {
+  height: 11px;
+  width: 22px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.pink {
+  background-color: rgba(193, 66, 66, 0.3);
+}
+
+.red {
+  background-color: rgba(223, 72, 26, 0.82);
+}
+
+.green {
+  background-color: rgba(72, 223, 26, 0.58);
+}
+.yellow {
+  background-color: rgba(249, 214, 76, 0.63);
+}
+
+.right-pane img {
+  width: 95%;
+}

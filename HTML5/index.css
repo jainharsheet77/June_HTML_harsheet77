@@ -1,0 +1,275 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: cornsilk;
+  padding: 5px 10px;
+  text-shadow: 1px 1px blue;
+}
+
+.title,
+nav,
+.author,
+.gitlink {
+  display: inline;
+  color: black;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+}
+
+.author {
+  margin: 0 5px;
+}
+
+aside {
+  /* height: calc(100vh-500px); */
+  /* visibility: hidden; space gets reserved but data is hidden */
+  /* display: none; no space is reserved */
+}
+
+footer {
+  background-color: darkgray;
+  text-align: center;
+  padding: 10px;
+  /* position: absolute;
+  bottom: 0; */
+  width: 100%;
+}
+
+.login {
+  border: 1px solid black;
+  width: 300px;
+  text-align: center;
+  margin: auto;
+}
+
+.border-box {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 40px;
+  border: 2px solid black;
+  position: sticky;
+  top: 0;
+  box-shadow: 10px -10px orange;
+}
+
+.content-box {
+  box-sizing: content-box;
+  width: 300px;
+  padding: 40px;
+  border: 2px solid black;
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* Selectors */
+
+/* Descendent Selectors */
+div p {
+  /* all p inside a div */
+  background-color: gold;
+}
+
+/* Child Selectors */
+div > div > p {
+  background-color: red;
+}
+
+/* sibling selector -- selects first match div after a p*/
+div + p {
+  background-color: cyan;
+}
+
+/* General Selector--- selects all div after a p */
+div ~ p {
+  background-color: green;
+}
+
+.background {
+  width: 500px;
+  height: 400px;
+  /* background-image: linear-gradient(to bottom left, red, blue, yellow); */
+  background-image: repeating-radial-gradient(
+    ellipse,
+    red,
+    blue 10%,
+    yellow,
+    green 40%
+  );
+}
+
+.container {
+  width: 100px;
+  height: 50px;
+  border: 2px solid;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* width: 80%; */
+}
+.flex-1,
+.flex-2,
+.flex-3 {
+  /* box-sizing: border-box; */
+  width: 70px;
+  height: 90px;
+  border: 2px solid;
+  padding: 5px;
+  font-size: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.flex-3 {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: width, height;
+  transition-duration: 3s;
+  transition-timing-function: cubic-bezier(0.1, 0.8, 1, 0.2);
+}
+
+.flex-3:hover {
+  width: 300px;
+  height: 200px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 500px;
+  height: 600px;
+  border: 1px solid black;
+  /* transform: rotate(180deg); */
+  animation: boxAnimation 10s infinite;
+}
+
+@keyframes boxAnimation {
+  from {
+    width: 10x;
+  }
+  to {
+    width: 500px;
+  }
+}
+
+.model-header {
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  background-color: #036587;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.close {
+}
+
+.modal-body {
+  border: 1px solid black;
+}
+
+.modal-footer {
+  display: flex;
+  height: 60px;
+  flex-direction: row-reverse;
+  padding-right: 40px;
+  margin-top: auto;
+}
+.modal-footer > button {
+  height: 30px;
+}
+
+a:hover {
+  background-color: yellow;
+}
+a:active {
+  background-color: red;
+}
+
+a:link {
+  background-color: blue;
+}
+
+a:visited {
+  background-color: green;
+}
+
+input[type="text"]:enabled {
+  background-color: blue;
+}
+
+input[type="text"]:disabled {
+  background-color: grey;
+}
+
+ul > li:nth-child(even) {
+  background-color: yellow;
+}
+
+ul > li:nth-child(3n + 1) {
+  background-color: red;
+}
+
+p::first-line {
+  font-weight: bold;
+}
+
+p::first-letter {
+  font-size: 50px;
+}
+
+p::before {
+  content: "hello from pseudo elements";
+}
+p::after {
+}
+
+.media-query {
+  width: 100%;
+  background-color: green;
+}
+
+@media screen and (min-width: 320) {
+  .media-query {
+    background-color: yellow;
+  }
+}
+
+@media screen and (max-width: 320) and (min-width: 767) {
+  .media-query {
+    background-color: yellow;
+  }
+}

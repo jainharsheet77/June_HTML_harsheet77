@@ -1,0 +1,322 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-vegan {
+  z-index: 10;
+  background-color: white;
+  width: 100%;
+  height: 77px;
+  align-items: center;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+#navbarSupportedContent {
+  margin-left: 53%;
+}
+.nav-logo {
+  width: 40px;
+}
+
+.nav-pad {
+  padding: 0px 28px;
+}
+
+.menu-item {
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+.btn-buy {
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(170, 210, 54);
+  padding: 9px 34px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 4px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.btn-blocks {
+  background-color: white;
+  border: none;
+  display: none;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png);
+  background-position: left;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner > h1 {
+  width: 100%;
+  max-width: 1100px;
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: 8.8px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0;
+}
+
+.card-item {
+  padding: 112px 48px;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+}
+.card-item:hover i {
+  transform: scale(1.1, 1.1);
+}
+.card-item i {
+  font-size: 96px;
+  font-weight: 900;
+  transition: all 0.3s;
+}
+.card-item h3 {
+  font-weight: 600;
+  font-size: 24px;
+}
+.first-card {
+  background-color: #5acda6;
+}
+.second-card {
+  background-color: #91ac41;
+}
+.third-card {
+  background-color: #e4b476;
+}
+.fourth-card {
+  background-color: #f69dad;
+}
+.banner > p {
+  width: 100%;
+  max-width: 1100px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  color: #8b8b99;
+  text-align: center;
+  padding-top: 32px;
+}
+
+.about {
+  width: 100%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  text-align: center;
+}
+
+#fresh-food-heading {
+  color: #91ac41;
+  font-size: 24px;
+  font-family: "Caveat", cursive;
+  margin-top: 35px;
+}
+#description {
+  max-width: 700px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 auto;
+  color: #8b8b99;
+  letter-spacing: 0.5px;
+  margin-bottom: 55px;
+}
+
+.about > h3 {
+  font-size: 44px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.about > p {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+#store-section {
+  width: 100%;
+  background-color: #f7eee2;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  text-align: center;
+  height: 650px;
+}
+
+#fresh-food-heading {
+  color: #91ac41;
+  font-size: 24px;
+  font-family: "Caveat", cursive;
+  margin: 0;
+  margin-top: 50px;
+}
+
+#store-section > h3 {
+  font-size: 44px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+#store-desc {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  color: #8b8b99;
+  letter-spacing: 0.5px;
+  margin-bottom: 55px;
+}
+
+#store-items-wrapper {
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  justify-content: stretch;
+  margin: 0 auto;
+}
+
+.store-item {
+  width: 25%;
+  text-align: center;
+  padding: 24px;
+}
+
+.icon-wrapper {
+  display: inline-block;
+  background-color: #e3b375;
+  border-radius: 50%;
+  padding: 40px;
+  color: white;
+  transition: all 0.3s;
+}
+.icon-wrapper i {
+  font-size: 60px;
+}
+
+.store-item:hover .icon-wrapper {
+  transform: scale(1.1, 1.1);
+}
+.store-item h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.store-item p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  color: #8b8b99;
+}
+
+#peoples-heading {
+  color: #91ac41;
+  font-size: 24px;
+  font-family: "Caveat", cursive;
+  margin: 0;
+  margin-top: 35px;
+}
+
+#peoples-section > h3 {
+  font-size: 44px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 8px;
+}
+#peoples-desc {
+  max-width: 700px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 auto;
+  color: #8b8b99;
+  letter-spacing: 0.5px;
+  margin-bottom: 55px;
+}
+
+#peoples-wrapper {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.people-item {
+  width: 30%;
+  text-align: center;
+  background-color: #f5f6fb;
+  padding: 40px 30px;
+  margin: 16px;
+  border-top-left-radius: 45px;
+  border-bottom-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  transition: box-shadow 0.3s;
+}
+
+.people-item img {
+  width: 80px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+}
+
+.people-message {
+  font-size: 14px;
+  color: #8b8b99;
+  letter-spacing: 0.5px;
+  font-style: italic;
+  margin: 0;
+}
+
+.people-item h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 0px;
+}
+
+.job-role {
+  color: #8b8b99;
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+@media screen and (min-width: 400px) {
+  .btn-blocks {
+    display: block;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #peoples -wrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .people -item {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

@@ -81,3 +81,16 @@ button {
 button:hover {
   cursor: not-allowed;
 }
+
+.grid-box {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: 30px 100px auto 100px;
+  padding: 20px;
+  background-color: chocolate;
+}
+
+.grid-item {
+  padding: 10px;
+  font-size: 24px;
+}

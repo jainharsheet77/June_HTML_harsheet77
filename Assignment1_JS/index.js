@@ -1,43 +1,45 @@
-let title;
-let productElement, imageElement;
-const products = document.getElementById("products")
-for (let product of productList) {
-    const { name, description, preview } = product;
-    productElement = document.createElement('div');
-    productElement.style.width = '15%';
-    productElement.style.color = 'red';
-    productElement.textContent = name;
-    let button=document.createElement('button');
-    button.textContent="Click Me";
-    button.addEventListener('click',(event)=>{
-        console.log("Event", event);
-    })
-    productElement.appendChild(button);
-    button.addEventListener('click',(event)=>{
-        console.log("Event", event);
-    })
-    // Description
-    descriptionElement = document.createElement('p');
-    descriptionElement.textContent = description;
-    descriptionElement.style.color = 'blue';
-    productElement.appendChild(descriptionElement)
+let productElement, imageElement,nameElement,priceElement,detailsDiv,products;
+let createCards=(itemList)=>{
 
-    //Image
-    imageElement = document.createElement('img');
-    imageElement.src = preview;
-    imageElement.width = '300';
-    productElement.appendChild(imageElement)
+    for (let item of itemList) {
+        const { name, brand, preview,price } = item;
+        productElement = document.createElement('div');
+        productElement.classList.add('card');
+        
+        //Image
+        imageElement = document.createElement('img');
+        imageElement.src = preview;
+        productElement.appendChild(imageElement);
 
+        // Detail container
+        detailsDiv=document.createElement('div');
+        detailsDiv.classList.add('details');
 
-    //Append ALL
-    products.appendChild(productElement)
+        // Name
+        nameElement=document.createElement('h3');
+        nameElement.textContent=name;
+        detailsDiv.appendChild(nameElement);
+        // Description
+        descriptionElement = document.createElement('h4');
+        descriptionElement.textContent = brand;
+        detailsDiv.appendChild(descriptionElement);   
+        
+        // Price
+        priceElement=document.createElement('h5');
+        priceElement.textContent=`Rs ${price}`;
+        detailsDiv.appendChild(priceElement);
+        // Append details to product element
+        productElement.appendChild(detailsDiv);
+        //Append to poduct conatiner
+        products.appendChild(productElement);
+    }
 }
-for (let i = 0; i < 3; i++) {
-    title = document.createElement('h1')
-    title.className = "title"
-    title.textContent = i
-    title.style.fontSize = '50px';
-    title.style.color = 'red';
-    document.body.appendChild(title)
 
-}
+clothList=productList.slice(0,5);
+watchList=productList.slice(5,10);
+
+products = document.getElementById("clothing_container");
+createCards(clothList);
+products=document.getElementById("Watches_container");
+createCards(watchList);
+

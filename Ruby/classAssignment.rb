@@ -88,8 +88,6 @@ puts "Empty Word #{word.empty?}"
 # 4. Verify the age is exactly 27 or not
 #            5. Print 5 times age with the help of "times" methods
 
-
-
 the_count = [1, 2, 3, 4, 5]
 fruits = ['apples', 'oranges', 'pears', 'apricots']
 changes = [1, 'pennies', 2, 'dimes', 3, 'quarters']
@@ -109,8 +107,41 @@ end
 
 
 # 6)  a)Write a ruby code for Fibonacci Series
+def fibonacci(n)
+    a=0
+    b=1
+    i=1
+    ct=0
+    if(n<1)
+        print "Invalid number"
+        return
+    end
+    if n==1
+        print "0 "
+        return
+    end
+    print "0 1 "
+    n-=2
+    n.times do
+        i=a+b
+        print " #{i} "
+        b=i
+        a=b
+    end
+end
+puts "Fibonacci series "
+fibonacci(9)
+puts
+
+        
+
 
 #       b)Take a input and check the value is “string” ,”float” or “integer” using case statement
+
+# puts "Enter value"
+# name=gets.chomp
+# puts "Hello #{name}" 
+
 
 # 7) Write a program for getting your name,age,mark1,mark2 and mark3(use if)
 
@@ -123,35 +154,19 @@ end
 # Total
 # Result : Pass / Fail(if any mark below 40 is fail)
  
-# 8)
 
-# the_count = [1, 2, 3, 4, 5]
-# fruits = ['apples', 'oranges', 'pears', 'apricots']
-# change = [1, 'pennies', 2, 'dimes', 3, 'quarters']
-
-# Expected output
-
-# This is count 1
-# This is count 2
-# This is count 3
-# This is count 4
-# This is count 5
-# A fruit of type: apples
-# A fruit of type: oranges
-# A fruit of type: pears
-# A fruit of type: apricots
-# I got 1
-# I got pennies
-# I got 2
-# I got dimes
-# I got 3
-# I got quarters
 
 
 # 9) Work out array
-# a = [2,4,3,"ruby",9.99]
 # reverse the above array
+a = [2,4,3,"ruby",9.99]
+puts a.reverse
+
+
 # sort the above array
+a.sort()
+puts a
+
 # 10) Try the following methods of Hash
 # keys
 # values
@@ -172,3 +187,7 @@ end
 
 # •	Check “am” is there using match method
 # •	Check number is there using scan method
+
+
+
+#  Mixing concept to check even or odd

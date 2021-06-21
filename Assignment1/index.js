@@ -6,7 +6,7 @@ let description=document.getElementById("description");
 let rightPaneList=[];
 
 
-fetch("http://5d76bf96515d1a0014085cf9.mockapi.io/playlist")
+fetch("https://5d76bf96515d1a0014085cf9.mockapi.io/playlist")
 .then(res=>res.json())
 .then(res=>{
     rightPaneList=res;
@@ -22,9 +22,8 @@ fetch("http://5d76bf96515d1a0014085cf9.mockapi.io/playlist")
         figCaption.textContent=item.title;
         figureTarget.appendChild(imageTarget);
         figureTarget.appendChild(figCaption);
-
         figureTarget.addEventListener('click',()=>{
-            fetch("http://5d76bf96515d1a0014085cf9.mockapi.io/video")
+            fetch("https://5d76bf96515d1a0014085cf9.mockapi.io/video")
             .then(res=>res.json())
             .then(res=>{
                 let requiredVideo=res.filter((vid)=>vid.id==item.id);

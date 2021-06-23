@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import Blog from './components/Blog/Blog';
 import './App.css';
 import {data} from './data';
 function App() {
@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <h1>{average}</h1>
+      <Blog></Blog>
       <div className="product">
         {
           data.map((item,idx)=>{

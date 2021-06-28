@@ -1,27 +1,21 @@
 import Blog from './components/Blog/Blog';
+import Topbar from './components/Topbar/Topbar';
+import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary';
+import Products from './components/Products/Products';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import {data} from './data';
+import {Switch} from "react-router-dom";
+import Home from './components/Home/Home';
 function App() {
-  const user="Harsheet";
-  const link="";
-  let average=0;
-  average=(data.reduce((acc,{price})=>acc+parseInt(price),0))/data.length;
   return (
     <div className="App">
-      <h1>{average}</h1>
-      <Blog></Blog>
-      <div className="product">
-        {
-          data.map((item,idx)=>{
-            return(
-              <div className="item">
-                <img src={item.preview}/>
-                <h4>{item.name}</h4>
-              </div>
-            )
-          })
-        }
-      </div> 
+      <Topbar></Topbar>
+       <ErrorBoundary>
+       <Products></Products>
+      </ErrorBoundary>
+      <Switch>
+        <Route path="/" exact component={Home}/>
+      </Switch>
     </div>
   );
   

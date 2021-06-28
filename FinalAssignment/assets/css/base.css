@@ -128,13 +128,6 @@ main {
   padding-bottom: 8%;
 }
 
-#edyoda-projects-logo {
-  width: 128px;
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-}
-
 footer {
   width: 100%;
   background-color: #1c1b1e;

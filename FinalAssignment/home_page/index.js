@@ -1,4 +1,5 @@
-const QueryString = window.location.search; 
+// const HomeUrl = "https://jainharsheet77.github.io/June_HTML_harsheet77/FinalAssignment/home_page";
+const HomeUrl="http://127.0.0.1:5500/FinalAssignment/product_detail/?q=";
 
 
 $(document).ready(function(){
@@ -38,7 +39,7 @@ let createCards=(itemList)=>{
         productElement.appendChild(detailsDiv);
         // Event linstener
         productElement.addEventListener('click',()=>{
-          window.location.replace(`/1`);
+          window.location.replace(`${HomeUrl}${item.id}`);
         })
 
         //Append to poduct conatiner
@@ -58,10 +59,5 @@ let createCards=(itemList)=>{
       products=document.getElementById("Watches_container");
       createCards(watchList);
 
-      const urlParams = new URLSearchParams(QueryString); 
-      let keys = urlParams.keys();
-      console.log(urlParams,QueryString);
-      var productId = window.location.search.split('=')[1];
-      console.log(productId);
     });
 });

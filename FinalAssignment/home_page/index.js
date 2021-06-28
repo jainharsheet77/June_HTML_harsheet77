@@ -1,5 +1,5 @@
 // const HomeUrl = "https://jainharsheet77.github.io/June_HTML_harsheet77/FinalAssignment/home_page";
-const HomeUrl="http://127.0.0.1:5500/FinalAssignment/product_detail/?q=";
+const HomeUrl="https://jainharsheet77.github.io/June_HTML_harsheet77/FinalAssignment/product_detail/?q=";
 
 
 $(document).ready(function(){

@@ -69,7 +69,7 @@ $(document).ready(function() {
             alert('Order Placed Successfully')
             localStorage.setItem('product-list', []);
 
-            location.assign('http://127.0.0.1:5500/FinalAssignment/order_confirmation/index.html');
+            location.assign('https://jainharsheet77.github.io/June_HTML_harsheet77/FinalAssignment/order_confirmation/index.html');
         })
     })
 })
